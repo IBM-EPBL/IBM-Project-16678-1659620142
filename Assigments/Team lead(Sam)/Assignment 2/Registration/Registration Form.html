@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Course Registration</h1>
+    <form method="get" action="reg.html">
+        <fieldset>
+            <legend>Name:</legend> 
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="" ><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="" ><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Personal Details:</legend>
+        <label for="Dob">Date of Birth:</label>
+        <input type="date" id="Dob" name="Dob" value="" ><br><br>
+        <label for="Bgroup">Blood Group:</label>
+        <select id="Blood" name="Blood_group">
+            <option value="A positive">A+</option>
+            <option value="A negative">A−</option>
+            <option value="B positive">B+ </option>
+            <option value="B negative">B− </option>
+            <option value="AB positive">AB+ </option>
+            <option value="AB negative">AB− </option>
+            <option value="O positive">O+ </option>
+            <option value="O negative">O− </option>
+          </select><br>
+          <p>Gender:</p>
+          <input type="radio" id="Male" name="Gender" value="Female">
+          <label for="html">Male</label>
+          <input type="radio" id="Female" name="Gender" value="Female">
+          <label for="Female">Female</label><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Userid:</legend>
+            <label for="mail">Email id:</label>
+            <input type="text" id="mail" name="mail" value="" maxlength="100" ><br><br>     
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" value=""><br><br>
+        <label for="pwd">confirm Password:</label>
+        <input type="password" id="cpwd" name="cpwd" value=""><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Contact Details:</legend> 
+            <label for="Phone">Phone number:</label>
+            <input type="text" id="Phone" name="Phone" maxlength="10" size="10" ><br><br>    
+        <label for="Adrs">Address:</label>
+        <input type="text" id="Adrs" name="Adrs" value=""style="width: 500px; height:80px;"><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Courses Selection</legend>
+            <p>Course:</p>
+            <input type="checkbox" id="state" name="Record" value="routine">
+            <label for="record1">Computer Science </label><br>
+            <input type="checkbox" id="state" name="Record" value="Treatment">
+            <label for="record2">Electrical & Electronics</label><br>
+            <input type="checkbox" id="state" name="Record" value="Diagnosed">
+            <label for="record3"> Civil Engineering</label><br><br>
+        </fieldset>
+        <input type="submit" value="Submit" >
+        <input type="reset" value="Reset">
+      </form>
+</body>
+</html>
